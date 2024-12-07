@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="ssnc-container">
+
+    <!-- Encabezado -->
+    <header class="ssnc-hero">
+        <h1>Spanish Night Crawl</h1>
+        <p>"Aprender español mientras se disfruta del ambiente nocturno de Salamanca."</p>
+        <a href="#ssnc-reservas" class="ssnc-btn-reservar">Reserva Ahora</a>
+    </header>
+
+    <!-- Sección 1: ¿Qué es Spanish Night Crawl? -->
+    <section id="ssnc-introduccion" class="ssnc-section">
+        <h2>¿Qué es Spanish Night Crawl?</h2>
+        <p>Una experiencia única para estudiantes internacionales y amantes de la cultura española.</p>
+        <ul class="ssnc-lista">
+            <li> Recorre 5 bares icónicos de Salamanca.</li>
+            <li> Participa en juegos interactivos y retos lingüísticos.</li>
+            <li> Conoce gente nueva mientras mejoras tu español.</li>
+        </ul>
+    </section>
+
+    <!-- Sección 2: ¿Cómo funciona? -->
+    <section id="ssnc-funcionamiento" class="ssnc-section">
+        <h2>¿Cómo funciona?</h2>
+        <div class="ssnc-pasos">
+            <div class="ssnc-paso">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/plazals.jpg');"></div>
+                
+                <h3>Punto de encuentro</h3>
+                <p>Nos reunimos en la Plaza Mayor para empezar la aventura.</p>
+            </div>
+            <div class="ssnc-paso">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/f2.jpg');"></div>
+                <h3>Material personalizado</h3>
+                <ul class="ssnc-lista">
+                    <li>Una tarjeta con tu nombre y país.</li>
+                    <li>Tarjetas VIP para bares y bebidas.</li>
+                    <li>Tarjetas con frases y palabras clave en español.</li>
+                </ul>
+            </div>
+            <div class="ssnc-paso">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/avilaa.jpg');"></div>
+                <h3>La ruta</h3>
+                <p>Visitamos 5 bares y en cada uno realizas un reto lingüístico.</p>
+                <p>Supera los retos, gana marcas en tu tarjeta y recibe bebidas en español.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: ¿Por qué elegirnos? -->
+    <section id="ssnc-beneficios" class="ssnc-section">
+        <h2>¿Por qué elegir Spanish Night Crawl?</h2>
+        <div class="ssnc-beneficios">
+            <div class="ssnc-beneficio">
+                <h3>Educativo y divertido</h3>
+                <p>Aprende español sin esfuerzo mientras te diviertes.</p>
+            </div>
+            <div class="ssnc-beneficio">
+                <h3>Acceso exclusivo</h3>
+                <p>Entradas VIP a bares con ambiente único.</p>
+            </div>
+            <div class="ssnc-beneficio">
+                <h3>Conexiones internacionales</h3>
+                <p>Ideal para estudiantes Erasmus y visitantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Reservas -->
+    <section id="ssnc-reservas" class="ssnc-section">
+        <h2>Reservas y descuentos</h2>
+        <div class="ssnc-detalles-reserva">
+            <div class="ssnc-caja">
+                <p><strong>Precio:</strong> 25 € por persona</p>
+            </div>
+            <div class="ssnc-caja">
+                <p>Incluye:</p>
+                <ul class="ssnc-lista">
+                    <li>Ruta por 5 bares.</li>
+                    <li>Juegos y retos lingüísticos.</li>
+                    <li>Dos bebidas gratis (según retos completados).</li>
+                    <li>Material didáctico y guía turístico bilingüe.</li>
+                </ul>
+            </div>
+            <div class="ssnc-caja">
+                <p><strong>Descuentos:</strong></p>
+                <ul class="ssnc-lista">
+                    <li>Grupos de 5 personas: 10% de descuento.</li>
+                    <li>Usuarios VIP: Precio especial en futuras actividades.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Acciones de Reserva -->
+        <div class="ssnc-reserva-acciones">
+            <div class="ssnc-caja">
+                <p><strong>¿Cómo reservar?</strong></p>
+                <ul class="ssnc-lista">
+                    <li>A través de WhatsApp: <a href="tel:+34123456789">+34 123 456 789</a></li>
+                    <li>Desde nuestra página web: <a href="#ssnc-reservar">Reserva aquí</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+{% endblock content %}

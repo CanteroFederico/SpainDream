@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="section_principal_salamanca">
+    <section class="section_sitios">
+        <section class="section_tarjetas">
+            <h2 class="titulo_seccion">SALAMANCA</h2>
+            <div class="contenedor_tarjetas">
+                <a href="alojamiento.html" class="tarjeta">
+                    <img src="{{url_for('static', filename='icons/fotos/salaca.jpg')}}" alt="Icono de alojamiento" class="icono_tarjeta">
+                    <h3 class="titulo_tarjeta">TOUR</h3>
+                    
+                </a>
+                <!-- Tarjeta 2 -->
+                <a href="{{url_for('lugares.lugares_la_alberca')}}" class="tarjeta">
+                    <img src="{{url_for('static', filename='icons/fotos/alberca.jpg')}}" alt="Icono de destinos" class="icono_tarjeta">
+                    <h3 class="titulo_tarjeta">La Alberca</h3>
+                    
+                </a>
+                <!-- Tarjeta 3 -->
+                <a href="{{url_for('lugares.lugares_salida')}}" class="tarjeta">
+                    <img src="{{url_for('static', filename='icons/fotos/bar.jpg')}}"  class="icono_tarjeta">
+                    <h3 class="titulo_tarjeta">Actividades</h3>
+                    
+                </a>
+            </div>
+        </section>
+    </section>
+    <section class="section_historia">
+        <h2 class="titulo_seccion">Salamanca y el Español</h2>
+        <p class="texto_historia">
+            Salamanca, conocida como la cuna del idioma español, es un lugar de gran importancia histórica y cultural. En esta ciudad se encuentra la Universidad de Salamanca, fundada en 1218, una de las más antiguas de Europa, donde se promovió la enseñanza y la difusión del español como lengua de conocimiento y cultura. 
+            Además, Salamanca ha sido testigo de eventos históricos clave que contribuyeron al desarrollo del idioma y la literatura española, consolidándose como un referente para los amantes del español y la historia.
+        </p>
+    </section>
+        <section class="section_galeria">
+            <h2 class="titulo_seccion"></h2>
+            <div class="galeria_imagenes">
+                <a href="{{url_for('static', filename='icons/fotos/salamancamapa.pdf')}}" target="_blank" class="enlace_galeria">
+                    <img src="{{url_for('static', filename='icons/fotos/MAPA.jpg')}}" alt="Vista de Salamanca" class="imagen_galeria">
+                </a>
+                <a href="{{url_for('static', filename='icons/fotos/salaca.jpg')}}" target="_blank" class="enlace_galeria">
+                    <img src="{{url_for('static', filename='icons/fotos/salaca.jpg')}}" alt="Plaza Mayor" class="imagen_galeria">
+                </a>
+                <a href="{{url_for('static', filename='icons/fotos/plazals.jpg')}}" target="_blank" class="enlace_galeria">
+                    <img src="{{url_for('static', filename='icons/fotos/plazals.JPG')}}" alt="Universidad de Salamanca" class="imagen_galeria">
+                </a>
+                <a href="{{url_for('static', filename='icons/fotos/sl3.jpg')}}" target="_blank" class="enlace_galeria">
+                    <img src="{{url_for('static', filename='icons/fotos/sl3.jpg')}}" alt="Catedral Nueva" class="imagen_galeria">
+                </a>
+            </div>
+        </section>
+        
+    
+    
+    <section class="section_spain_dream">
+        <h2 class="titulo_seccion">Descubre Spain Dream</h2>
+        <div class="contenedor_cards">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <h3 class="card_titulo">¿Qué es “La Universidad de Salamanca y el español?</h3>
+                <p class="card_texto">Fundada en 1218, es una de las más antiguas de Europa y un referente global en la enseñanza del español como lengua extranjera, atrayendo estudiantes de todo el mundo.</p>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <h3 class="card_titulo">¿Sabias que la primera gramática del español nació en Salamanca ?</h3>
+                <p class="card_texto">En 1492, Antonio de Nebrija, profesor de la Universidad de Salamanca, publicó "Gramática de la lengua castellana", la primera gramática de un idioma moderno en Europa. Este libro marcó el inicio de la estandarización del español como lengua escrita y hablada.</p>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <h3 class="card_titulo">El astronauta de la Catedral Nueva</h3>
+                <p class="card_texto">Durante una restauración en 1992, se añadió un astronauta esculpido como símbolo del avance y la modernidad, un detalle sorprendente en una catedral histórica.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Cultura -->
+    <section id="cultura" class="section">
+      <h2>Cultura del Español</h2>
+      <p>
+        Salamanca, conocida como la **"Ciudad Dorada"**, es un tesoro histórico y cultural de España. Su casco antiguo, declarado Patrimonio de la Humanidad por la UNESCO, alberga una de las universidades más antiguas de Europa, fundada en 1218, que ha sido cuna de conocimiento y cultura durante siglos. Destaca por su impresionante arquitectura de estilo plateresco, como la majestuosa Plaza Mayor, la Casa de las Conchas y sus dos catedrales, la Vieja y la Nueva. Además, es famosa por la misteriosa rana esculpida en la fachada de la universidad, un símbolo de buena suerte que atrae a turistas y estudiantes de todo el mundo.
+      </p>
+      <img src="{{url_for('static', filename='icons/fotos/ca.jpg')}}" alt="Universidad de Salamanca" class="responsive-image">
+    </section>
+
+    <!-- Sección Actividades -->
+    <section id="actividades" class="section">
+      <h2>Actividades Destacadas en Salamanca</h2>
+      <ul>
+        <li><strong>Visita la Universidad de Salamanca:</strong> Admira su arquitectura histórica y busca la famosa rana en su fachada.</li>
+        <li><strong>Paseo por la Plaza Mayor:</strong> El corazón de la ciudad, ideal para disfrutar de su ambiente tanto de día como de noche.</li>
+        <li><strong>Explora la Catedral Vieja y Nueva:</strong> Un recorrido por siglos de historia y arte gótico y renacentista.</li>
+        <li><strong>Casa de las Conchas:</strong> Un emblema arquitectónico con su singular fachada decorada con conchas.</li>
+        <li><strong>Disfruta de su gastronomía:</strong> Prueba el hornazo, las chichas y un buen jamón ibérico.</li>
+      </ul>
+      <img src="{{url_for('static', filename='icons/fotos/plazals.jpg')}}" alt="Plaza Mayor de Salamanca" class="responsive-image">
+    </section>
+
+
+
+</section>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %} 
+{% block content %}
+<section class="section_canvas">
+  <h2 class="titulo_canvas">Modelo de negocio</h2>
+  <p class="texto_canvas">
+    Spain Dream ofrece experiencias auténticas en Castilla y León centrandonos en Salamanca, integrando rutas, alojamientos y actividades personalizadas. Su modelo se basa en alianzas locales, canales digitales y atención cercana. Genera ingresos mediante comisiones, suscripciones premium y eventos exclusivos, priorizando tecnología, marketing y un equipo experto para garantizar calidad.</p>
+</section>
+<a href="{{url_for('static', filename='icons/fotos/canvas.pdf')}}" target="_blank" class="enlace_pdf">
+  <img src="{{url_for('static', filename='icons/fotos/canvas.jpg')}}" alt="Descargar PDF" class="imagen_canvas" />
+</a>
+</section>
+{% endblock content %}

@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- Encabezado -->
+<div class="alberca-hero">
+    <h1>La Alberca</h1>
+    <p>"Donde la historia y el idioma se encuentran"</p>
+    <a href="#alberca-actividad" class="alberca-btn">Descubre más</a>
+</div>
+
+<!-- Sección 1: Descubre La Alberca -->
+<div id="alberca-intro" class="alberca-seccion">
+    <h2>Descubre La Alberca</h2>
+    <p>Un pueblo lleno de encanto, reconocido como uno de los más bellos de España. La Alberca te transporta a la Edad Media con su arquitectura única, tradiciones ancestrales y su fascinante cultura local.</p>
+    <ul class="alberca-lista">
+        <li>Admira su Plaza Mayor rodeada de casas con balcones de madera.</li>
+        <li>Explora calles empedradas que cuentan historias de siglos pasados.</li>
+        <li>Vive una experiencia auténtica en este rincón de Salamanca.</li>
+    </ul>
+    <div class="alberca-foto">
+        <img src="{{url_for('static', filename='icons/fotos/alberca.jpg')}}" alt="Plaza Mayor de La Alberca" class="alberca-img">
+        <!-- Cambia "ruta/a/tu/imagen1.jpg" por la ubicación real de tu foto -->
+    </div>
+</div>
+
+<!-- Sección 2: Aventura Lingüística Albercana -->
+<div id="alberca-actividad" class="alberca-seccion">
+    <h2>Aventura Lingüística Albercana</h2>
+    <p>Explora La Alberca mientras mejoras tu español con esta actividad interactiva que combina cultura, diversión y aprendizaje.</p>
+    <div class="alberca-detalles">
+        <div class="alberca-detalle">
+            <h3>Recorrido temático</h3>
+            <p>Conoce los secretos de La Alberca acompañado de un guía bilingüe que te enseñará vocabulario sobre historia, gastronomía y tradiciones.</p>
+            <img src="{{url_for('static', filename='icons/fotos/alberca.jpg')}}" alt="Recorrido en La Alberca" class="alberca-img-detalle">
+        </div>
+        <div class="alberca-detalle">
+            <h3>Juego de pistas</h3>
+            <p>Resuelve retos lingüísticos en puntos clave del pueblo, desde pedir el famoso "hornazo" hasta describir la fuente más antigua en español.</p>
+            <img src="{{url_for('static', filename='icons/fotos/alberca.jpg')}}" alt="Juego de pistas en La Alberca" class="alberca-img-detalle">
+        </div>
+        <div class="alberca-detalle">
+            <h3>Desafío cultural</h3>
+            <p>Aprende refranes típicos mientras disfrutas de una cata de productos locales como jamón, queso y vino.</p>
+            <img src="{{url_for('static', filename='icons/fotos/alberca.jpg')}}" alt="Cata de productos típicos" class="alberca-img-detalle">
+        </div>
+    </div>
+</div>
+
+<!-- Sección 3: ¿Cómo participar? -->
+<div id="alberca-reservas" class="alberca-seccion">
+    <h2>¿Cómo participar?</h2>
+    <p>Reserva tu plaza y vive una experiencia inolvidable:</p>
+    <ul class="alberca-lista">
+        <li><strong>Incluye:</strong> Guía local bilingüe, material interactivo, acceso a puntos históricos, y cata de productos típicos.</li>
+        <li><strong>Precio:</strong> 20 € por persona (Descuento para grupos de 5 o más).</li>
+        <li><strong>Duración:</strong> 2 horas.</li>
+        <li><strong>Público:</strong> Ideal para estudiantes Erasmus y visitantes extranjeros.</li>
+    </ul>
+    <div class="alberca-foto">
+        <img src="{{url_for('static', filename='icons/fotos/alberca.jpg')}}" alt="Grupo en actividad en La Alberca" class="alberca-img">
+        <!-- Cambia "ruta/a/tu/imagen5.jpg" por la ubicación real de tu foto -->
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,59 @@
+{% extends "layout.html" %} 
+{% block content %}
+<section class="home_section_principal">
+
+    <section class="home_section_foto">
+        <div class="home_contenido_texto">
+            <h1 class="home_titulo">Explora Castilla y León</h1>
+            <p class="home_subtitulo"></p>
+            <a href="{{ url_for('users.login') }}" class="home_btn">Login</a>
+        </div> 
+    </section>
+    
+    <section class="home_section_sitios">
+        <section class="home_section_tarjetas">
+            <h2 class="home_titulo_seccion">Explora más con Spain Dream</h2>
+            <div class="home_contenedor_tarjetas">
+                <a href="alojamiento.html" class="home_tarjeta">
+                    <img src="{{url_for('static', filename='icons/fotos/hotel.jpg')}}" alt="Icono de alojamiento" class="home_icono_tarjeta">
+                    <h3 class="home_titulo_tarjeta">Alojamiento en hoteles</h3>
+                    <p class="home_descripcion_tarjeta">Encuentra los mejores hoteles para tu estancia en España.</p>
+                </a>
+                <!-- Tarjeta 2 -->
+                <a href="{{url_for('home.home_actividades')}}" class="home_tarjeta">
+                    <img src="{{url_for('static', filename='icons/fotos/Valladolid.jpg')}}" alt="Icono de destinos" class="home_icono_tarjeta">
+                    <h3 class="home_titulo_tarjeta">Lugares para viajar</h3>
+                    <p class="home_descripcion_tarjeta">Descubre los destinos turísticos más fascinantes de España.</p>
+                </a>
+                <!-- Tarjeta 3 -->
+                <a href="costumbres_tipicas.html" class="home_tarjeta">
+                    <img src="{{url_for('static', filename='icons/fotos/TORO.jpg')}}"  class="home_icono_tarjeta">
+                    <h3 class="home_titulo_tarjeta">Costumbres típicas</h3>
+                    <p class="home_descripcion_tarjeta">Aprende sobre las tradiciones y la cultura española.</p>
+                </a>
+            </div>
+        </section>
+
+    <section class="home_section_spain_dream">
+        <h2 class="home_titulo_seccion">Descubre Spain Dream</h2>
+        <div class="home_contenedor_cards">
+            <!-- Tarjeta 1 -->
+            <div class="home_card">
+                <h3 class="home_card_titulo">¿Qué somos?</h3>
+                <p class="home_card_texto">Es una agencia de viajes dedicada a ofrecer experiencias auténticas en Castilla y León, especialmente en Salamanca. Nuestro objetivo es conectar a estudiantes Erasmus y visitantes internacionales con la riqueza cultural y la tranquilidad de la vida rural española.</p>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="home_card">
+                <h3 class="home_card_titulo">¿Qué ofrecemos?</h3>
+                <p class="home_card_texto">Spain Dream ofrece una gran variedad de servicios dentro de su página web: alojamiento, variedad de destinos en España, descripción de costumbres típicas y más.</p>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="home_card">
+                <h3 class="home_card_titulo">¿Cómo accedo a ella?</h3>
+                <p class="home_card_texto">Puedes registrarte en la app/web para desbloquear funciones como: servicios de información, compras, guía de frases típicas, chatbot, reservas en restaurantes y más.</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+{% endblock content %}
