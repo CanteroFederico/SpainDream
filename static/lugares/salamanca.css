@@ -1,0 +1,273 @@
+/* Estilos limitados a la sección Salamanca */
+.section_principal_salamanca {
+  background-color: antiquewhite;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+/* Sección de Spain Dream */
+.section_principal_salamanca .section_spain_dream {
+  padding: 3rem 1rem;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.section_principal_salamanca .titulo_seccion {
+  font-size: 2.5rem;
+  color: #001f54;
+  margin-bottom: 2rem;
+}
+
+.section_principal_salamanca .contenedor_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.section_principal_salamanca .card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 500px;
+  flex: 1 1 calc(25% - 1.5rem);
+  width: 90px;
+  position: relative; /* Necesario para los efectos */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+}
+
+.section_principal_salamanca .card:hover {
+  transform: translateY(-10px); /* Desplazamiento hacia arriba al hacer hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.section_principal_salamanca .card_titulo {
+  font-size: 1.5rem;
+  color: #ff5722;
+  margin-bottom: 1rem;
+}
+
+.section_principal_salamanca .card_texto {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.section_historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-color: #f5f5f5; /* Fondo claro */
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.section_historia .titulo_seccion {
+  font-size: 2.5rem;
+  color: #001f54; /* Azul oscuro */
+  margin-bottom: 1rem;
+}
+
+.section_historia .texto_historia {
+  font-size: 1.2rem;
+  color: #333; /* Gris oscuro */
+  line-height: 1.8;
+  width: 60%; /* Limita el ancho del texto al 60% */
+  max-width: 800px; /* Máximo ancho para pantallas grandes */
+  margin: 0 auto;
+}
+
+
+/* Sección "SALAMANCA" */
+.section_principal_salamanca .section_tarjetas {
+  padding: 3rem 1rem;
+  background-color: antiquewhite;
+  text-align: center;
+}
+.section_principal_salamanca .contenedor_tarjetas .tarjeta { 
+  height: 900px;
+  border-radius: 600px;
+}
+.section_principal_salamanca .contenedor_tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Tarjetas */
+.section_principal_salamanca .tarjeta {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajuste del color de la sombra */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  text-align: center; /* Centra horizontalmente el contenido */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+}
+
+.section_principal_salamanca .tarjeta:hover {
+  transform: translateY(-10px); /* Desplazamiento hacia arriba al hacer hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Imagen de fondo de las tarjetas */
+.section_principal_salamanca .tarjeta img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.6); /* Mantiene el texto visible */
+}
+
+/* Contenido de la tarjeta */
+.section_principal_salamanca .tarjeta h3,
+.section_principal_salamanca .tarjeta p {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté encima de la imagen */
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+  border-radius: 5px;
+}
+
+/* Título de la tarjeta */
+.section_principal_salamanca .titulo_tarjeta {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Descripción de la tarjeta */
+.section_principal_salamanca .descripcion_tarjeta {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Alineación centrada del contenido */
+.section_principal_salamanca .tarjeta .titulo_tarjeta,
+.section_principal_salamanca .tarjeta .descripcion_tarjeta {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.header {
+  background: #c49c48;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  color: #001f54;
+}
+
+.section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #001f54;
+}
+
+.section h2 {
+  color: #8a623d;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+footer {
+  background: #8a623d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #c49c48;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #8a623d;
+}
+
+.galeria_imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espacio entre imágenes */
+  justify-content: center; /* Centra las imágenes */
+}
+
+.enlace_galeria {
+  display: inline-block; /* Asegura que cada imagen sea clicable */
+  text-decoration: none; /* Elimina subrayados en los enlaces */
+}
+
+.imagen_galeria {
+  width: calc(25% - 1rem); /* Ocupa el 25% del ancho disponible menos el gap */
+  width: 300px; /* Ancho máximo de cada imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+  object-fit: cover; /* Ajusta la imagen sin distorsión */
+  transition: transform 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.imagen_galeria:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+  cursor: pointer; /* Cambia el cursor para indicar interactividad */
+}
