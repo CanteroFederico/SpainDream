@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Developers -->
+<section class="section-developers">
+  <div class="container">
+    <div class="developers-list">
+      <h1 style="text-align: center">Desarrolladores</h1>
+    </div>
+
+    <div class="developers-profile">
+      <!-- Fila 1 -->
+      <div class="developer-box">
+        <img src="{{url_for('static', filename='icons/fotos/mika.jpg')}}" alt="" class="developer-image"/>
+        <h3>Mikael García</h3>
+        <p>Soy Mikael García Núñez, tengo 20 años y estudiante de PYMES en la USAL, de carácter introvertido pero organizador y dedicado a mis labores, me gustan los deportes colectivos y lograr objetivos.</p>
+      </div>
+      <div class="developer-box">
+        <img src="{{url_for('static', filename='icons/fotos/dog.jpg')}}" alt="" class="developer-image"/>
+        <h3>Manuel De Juan Carnero</h3>
+        <p>Soy Manuel. Tengo 23 años y también hago PYMES en la USAL. Mi enfoque laboral quiero que sea en los negocios y en todo lo relacionado con la venta, pero la vida siempre da muchas vueltas.</p>
+      </div>
+      <div class="developer-box">
+        <img src="{{url_for('static', filename='icons/fotos/rod.jpg')}}" alt="" class="developer-image"/>
+        <h3>Rodrigo Gonzalez Ruiz Diaz</h3>
+        <p>Soy estudiante de Gestión de Pequeñas y Medianas Empresas en la Universidad de Salamanca, con experiencia laboral como vendedor y atencion al cliente . Me considero una persona introvertida pero comprometida, organizada y responsable.</p>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="developer-box2">
+        <img src="{{url_for('static', filename='icons/fotos/BRUNO.jpg')}}" alt="" class="developer-image"/>
+        <h3>Bruno Mastache</h3>
+        <p>Tengo la carrera de Pymes en la Universidad de Salamanca y trabajé un año en Pavestone, en Vigo. Me interesa el mundo de las inversiones, especialmente las criptomonedas. Estoy comprometido con el proyecto SpainDream, que considero innovador y con gran potencial..</p>
+      </div>
+      <div class="developer-box2">
+        <img src="{{url_for('static', filename='icons/fotos/borja.jpg')}}" alt="" class="developer-image"/>
+        <h3>Borja Girón</h3>
+        <p>Soy Borja Girón, estudiante de gestión de pymes en la USAL, me considero una persona extrovertida además de ambiciosa, disfruto llevando a cabo proyectos que requieren trabajo en equipo y coordinación..</p>
+      </div>
+      <div class="developer-box2">
+        <img src="{{url_for('static', filename='icons/fotos/maria1.jpg')}}" alt="" class="developer-image"/>
+        <h3>Maria Martín</h3>
+        <p>Soy una chica muy responsable en el ámbito académico, así como, muy independiente en mi día a día. Me puedo definir como una persona con mucho carácter pero muy agradable a la hora de socializar con los demás.</p>
+      </div>
+    </div>
+
+    <!-- Fila adicional con caja centrada -->
+    <div class="developer-single-box">
+      <div class="developer-box">
+        <img src="{{url_for('static', filename='icons/fotos/elba2.jpg')}}" alt="" class="developer-image"/>
+        <h3>Elba Chavarría Palma</h3>
+        <p>Soy estudiante de Pymes en la USAL de 23 años, con carácter extrovertido y muy exigente conmigo misma, con ganas de aprender siempre algo nuevo en lo que pueda mejorar, tanto a nivel personal como en lo profesional. Me gusta trabajar en equipo y detesto las injusticias.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
