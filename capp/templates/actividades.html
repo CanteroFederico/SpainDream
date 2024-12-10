@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="section_principal_actividades">
+
+    <!-- Sección destacada -->
+    <section class="section_foto_actividades">
+        <div class="contenido_texto_actividades">
+            <h1 class="titulo_actividades">Castilla y León: Descubre Salamanca y Más</h1>
+            <p class="subtitulo_actividades"></p>
+            <button class="btn_actividades"></button>
+        </div> 
+    </section>
+
+    <!-- Sección de destinos -->
+    <section class="section_tarjetas_actividades">
+        <h2 class="titulo_seccion_actividades">Explora Castilla y León</h2>
+        <div class="contenedor_tarjetas_actividades">
+            
+            <a href="{{url_for('lugares.lugares_salamanca')}}" class="tarjeta_actividades">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/cate.jpg');"></div>
+                <h3 class="titulo_tarjeta_actividades">Salamanca</h3>
+                <p class="descripcion_tarjeta_actividades">Patrimonio de la Humanidad, conocida por su universidad y vibrante vida cultural.</p>
+            </a>
+
+            <a href="lugares_para_viajar.html" class="tarjeta_actividades">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/avilaa.jpg');"></div>
+                <h3 class="titulo_tarjeta_actividades">Ávila</h3>
+                <p class="descripcion_tarjeta_actividades">Famosa por sus murallas medievales y paisajes de ensueño.</p>
+            </a>
+
+            <a href="costumbres_tipicas.html" class="tarjeta_actividades">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/segovia2.jpg');"></div>
+                <h3 class="titulo_tarjeta_actividades">Segovia</h3>
+                <p class="descripcion_tarjeta_actividades">Descubre su imponente acueducto romano y encantadoras calles.</p>
+            </a>
+
+            <a href="alojamiento.html" class="tarjeta_actividades">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/Valladolid.jpg');"></div>
+                <h3 class="titulo_tarjeta_actividades">Valladolid</h3>
+                <p class="descripcion_tarjeta_actividades">Capital histórica y cultural con impresionantes monumentos.</p>
+            </a>
+
+            <a href="lugares_para_viajar.html" class="tarjeta_actividades">
+                <div class="imagen_fondo" style="background-image: url('static/icons/fotos/Burgos.jpg');"></div>
+                <h3 class="titulo_tarjeta_actividades">Burgos</h3>
+                <p class="descripcion_tarjeta_actividades">Hogar de su catedral gótica y del Camino de Santiago.</p>
+            </a>
+
+        </div>
+    </section>
+</section>
+{% endblock content %}
